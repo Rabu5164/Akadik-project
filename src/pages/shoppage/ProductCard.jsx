@@ -1,5 +1,6 @@
 import React from 'react';
-import getImgUrl from "../../utils/getImageUrl"; 
+import getImageUrl from "../../utils/getImageUrl";
+ 
 import Rating from '../../components/Rating';
 import { FiPlus } from "react-icons/fi";
 
@@ -8,9 +9,8 @@ const ProductCard = ({ product }) => {
   return (
       <div>
           <div className='bg-[#FAFAFA]'>
-      <img 
-        src={getImgUrl(product.imageUrl)} 
-        alt=""/>
+     <img src={getImageUrl(product.image)} alt={product.name} />
+
       
       
     </div>
